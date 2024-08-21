@@ -27,21 +27,21 @@ function Index() {
   return (
     <ConfigProvider locale={locale}>
       <View className='nutui-react-demo'>
-        <View>{translated[localeKey].welcome}</View>
+        <View>上传图片</View>
         <View>
-          <Button type='primary' onClick={handleSwitchLocale}>
-            {translated[localeKey].button}
-          </Button>
-          <Button type='success' onClick={() => setVisible(true)}>
-            {translated[localeKey].open}
-          </Button>
-          <Dialog
-            visible={visible}
-            onConfirm={() => setVisible(false)}
-            onCancel={() => setVisible(false)}>
-            {translated[localeKey].welcome}
-          </Dialog>
-          <TextArea disabled showCount maxLength={20} />
+          {/*<Button type='primary' onClick={handleSwitchLocale}>*/}
+          {/*  {translated[localeKey].button}*/}
+          {/*</Button>*/}
+          {/*<Button type='success' onClick={() => setVisible(true)}>*/}
+          {/*  {translated[localeKey].open}*/}
+          {/*</Button>*/}
+          {/*<Dialog*/}
+          {/*  visible={visible}*/}
+          {/*  onConfirm={() => setVisible(false)}*/}
+          {/*  onCancel={() => setVisible(false)}>*/}
+          {/*  {translated[localeKey].welcome}*/}
+          {/*</Dialog>*/}
+          {/*<TextArea disabled showCount maxLength={20} />*/}
           <Uploader
             url={'https://z.outmao.cn/api/data/media/upload/image'}
             onStart={()=>{}}
